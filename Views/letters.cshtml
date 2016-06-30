@@ -1,0 +1,11 @@
+<h1>letters of hangman</h1>
+<form action="/input" method="post">
+  <input id="inputletter" name="inputletter" type="text">
+  <button type="submit">try!</button>
+</form>
+
+@foreach(var letter in Model)
+{
+  <span>@letter </span>
+}
+<p><a href="/">Back home</a></p>
